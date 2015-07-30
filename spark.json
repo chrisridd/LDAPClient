@@ -1,0 +1,7 @@
+{
+  "name": "LDAPClient",
+  "author": "Chris Ridd <chrisridd@mac.com>",
+  "license": "BSD",
+  "version": "0.0.0",
+  "description": "A simple LDAP client library"
+}
