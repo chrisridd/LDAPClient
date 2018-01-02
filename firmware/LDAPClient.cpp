@@ -97,8 +97,8 @@ bool LDAPClient::readTagLength(int *tag, int *length)
       }
       if (len == 4 && buffer[1] == 0x82) {
         *tag = (int)buffer[0];
-        *length = (((int)buffer[2] << 8) & 0xff) |
-          (((int)buffer[3] << 0) & 0xff);
+        *length = (((int)buffer[2] & 0xff) << 8) |
+          ((int)buffer[3] & 0xff);
         return true;
       }
     }
